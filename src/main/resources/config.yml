@@ -1,0 +1,27 @@
+# 主世界名称（通常为 world）
+world: world
+# 读取图片的目录：plugins/WallImage/images/
+images-folder: images
+# 默认图片文件名（位于 images-folder 下）
+default-image: example.png
+# 墙面左上角与右下角（包含边界）。
+# 这里严格匹配你给的区域：
+# 左上角: (384, -32, 113)
+# 右下角: (364, -47, 113)
+# 宽21（X: 384→364），高16（Y: -32→-47），Z 固定 113。
+from:
+  x: 384
+  y: -32
+  z: 112
+to:
+  x: 364
+  y: -47
+  z: 112
+# 挂在这些方块的哪一面（这里是北表面）
+face: NORTH
+# 放置前是否先清理该区域内旧的物品展示框
+clear-before-place: true
+# 物品展示框是否可见（false 会隐藏边框，仅显示地图）
+itemframe-visible: false
+# 是否让物品展示框固定（玩家无法旋转/破坏，除非有权限/创造）
+itemframe-fixed: true

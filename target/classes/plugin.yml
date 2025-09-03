@@ -1,0 +1,17 @@
+name: PPT
+version: '1.3.0'
+author: Squ1
+main: me.squ.ppt.PPT
+api-version: '1.20'
+commands:
+  placeimage:
+    description: Place a 21x16 image mosaic on the specified wall.
+    usage: /placeimage <filename>|clear|reload
+    permission: ppt.use
+  ppt:
+    description: Control slideshow of numbered images.
+    usage: /ppt <begin|up|down|<number>|host>
+    permission: ppt.use
+permissions:
+  ppt.use:
+    default: op
